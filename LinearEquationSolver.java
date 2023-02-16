@@ -5,19 +5,19 @@ public class LinearEquationSolver {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập hệ số a: ");
-        double a = scanner.nextDouble();
+        double coefficient_a = scanner.nextDouble();
         System.out.print("Nhập hệ số b: ");
-        double b = scanner.nextDouble();
+        double coefficient_b = scanner.nextDouble();
 
-        if (a == 0) {
-            if (b == 0) {
+        if (coefficient_a == 0) {
+            if (coefficient_b == 0) {
                 System.out.println("Phương trình vô số nghiệm");
             } else {
                 System.out.println("Phương trình vô nghiệm");
             }
         } else {
-            double x = -b / a;
-            System.out.println("Nghiệm của phương trình la x = " + x);
+            double result = -coefficient_b / coefficient_a;
+            System.out.println("Nghiệm của phương trình la x = " + result);
         }
     }
 }
